@@ -23,6 +23,9 @@ Vagrant.configure("2") do |config|
 
   config.vm.boot_timeout = 300
 
+  config.vm.provision("file",
+                      source: "../data/",
+                      destination: "/tmp/")
   config.vm.provision("root", type: "shell",
                       path: "provision.root.sh",
                       privileged: true)
