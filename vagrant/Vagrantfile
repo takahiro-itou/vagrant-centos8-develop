@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |v|
     v.name   = "vagrant-centos8-develop"
-    v.memory = "2048"
+    v.memory = "3072"
 
     v.gui    = false
     v.customize [
