@@ -6,4 +6,7 @@ echo  Provisioning $HOSTNAME
 
 sudo  timedatectl  set-timezone Asia/Tokyo
 
+sudo  yum  install -y  \
+    screen
+
 date  >  /root/.provision.root
